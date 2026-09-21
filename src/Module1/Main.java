@@ -84,6 +84,10 @@ public class Main {
 
         ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
         //Isme humne kia yeh hai ki jese new list to bana li ab list.clone bhi kar dia lekin isse yeh chala ni to humne yeh wapis likh ke usko typecast kia hai...
+        System.out.println("yeh clone list hai :- " + list );
+        //dhyaan se dekhenge ki humne koi value insert nahi kia hai lekin clone kia hai
+        // yeh shallow copy hai --> shallow matlab outer object alag hai and inner object samne rahega
+        // 2usra deep copy hai --> deep copy matlab bahri object bhi alag hai and inner object bhi same
 
 
 
