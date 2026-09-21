@@ -88,7 +88,12 @@ public class Main {
         //dhyaan se dekhenge ki humne koi value insert nahi kia hai lekin clone kia hai
         // yeh shallow copy hai --> shallow matlab outer object alag hai and inner object samne rahega
         // 2usra deep copy hai --> deep copy matlab bahri object bhi alag hai and inner object bhi same
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
 
+        //to check set is empty or not
+        System.out.println(marks.isEmpty());
+        System.out.println(newList.isEmpty());
 
 
 
