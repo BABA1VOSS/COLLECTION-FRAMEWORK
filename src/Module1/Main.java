@@ -1,8 +1,6 @@
 package Module1;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,7 +54,7 @@ public class Main {
         list3.add(14);
         System.out.println(list3.get(2));
         System.out.println("before set: " + list3);
-//        ArrayList<Integer> collection = new ArrayList<>();
+//
 
 
         list3.set(0,100);//(pehle index likhenge , fir value)(0,100)
@@ -70,6 +68,25 @@ public class Main {
 
         //contains method
         System.out.println(list3.contains(1000));
+
+       list.add(12);
+       list.add(6);
+        System.out.println("Printing Entire List: " + list);
+
+        //sort an array list
+
+        Collections.sort(list);
+        System.out.println(list);
+        //HW --> How we can sort in descending order
+//        list.sort(Collections.reverseOrder());// hume jab descending order mein chaiye hoga tab hum list.sort likh ke fir (Collections.reverseorder kar denge matlab ki sortedd list ka reverse order kar denge
+        Collections.reverse(list);// yeh second method hai isko theek karne ka
+        System.out.println(list);
+
+        ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
+        //Isme humne kia yeh hai ki jese new list to bana li ab list.clone bhi kar dia lekin isse yeh chala ni to humne yeh wapis likh ke usko typecast kia hai...
+
+
+
 
 
     }
