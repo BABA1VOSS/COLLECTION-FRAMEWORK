@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
         //List or Collection -> interface
         // ArrayList-> concrete class(kyunki yeh ek concrete class hai ,to  iska object banana assan hai)
-        ArrayList<Integer>  list = new ArrayList<>();
+        //List<Integer> list = new ArrayList<>();
+        List<Integer>  list = new LinkedList<>();
 
         //add
         list.add(10);
@@ -22,7 +23,8 @@ public class Main {
 
 
         //addAll
-        List<Integer> list2 =new ArrayList<>();
+        //List<Integer> list = new ArrayList<>();
+        List<Integer> list2 =new LinkedList<>();
         list2.add(101);
         list2.add(102);
         list2.add(20);
@@ -79,10 +81,10 @@ public class Main {
         System.out.println(list);
         //HW --> How we can sort in descending order
 //        list.sort(Collections.reverseOrder());// hume jab descending order mein chaiye hoga tab hum list.sort likh ke fir (Collections.reverseorder kar denge matlab ki sortedd list ka reverse order kar denge
-        Collections.reverse(list);// yeh second method hai isko theek karne ka
-        System.out.println(list);
-
-        ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
+//        Collections.reverse(list);// yeh second method hai isko theek karne ka
+//        System.out.println(list);
+        //ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
+       // LinkedList<Integer> newList = (LinkedList<Integer>)list.clone();//------
         //Isme humne kia yeh hai ki jese new list to bana li ab list.clone bhi kar dia lekin isse yeh chala ni to humne yeh wapis likh ke usko typecast kia hai...
         System.out.println("yeh clone list hai :- " + list );
         //dhyaan se dekhenge ki humne koi value insert nahi kia hai lekin clone kia hai
@@ -93,7 +95,41 @@ public class Main {
 
         //to check set is empty or not
         System.out.println(marks.isEmpty());
-        System.out.println(newList.isEmpty());
+//        System.out.println(newList.isEmpty());
+//        System.out.println(newList.indexOf(40));
+//        System.out.println(newList.indexOf(6));
+        list.add(30);
+        list.add(24);
+        list.add(30);
+        System.out.println("printing original list: " + list);
+//        System.out.println(list.indexOf(40));
+
+        //concept of lastIndex --> last indexof wale method se  hum last occurrence nikal sakte hai
+        System.out.println(list.lastIndexOf(30));
+
+        //addFirst and addLast
+        list.remove(3);
+        list.remove(3);
+        list.remove(3);
+        list.remove(3);
+        System.out.println("printing original list: " + list);
+       // list.addFirst(101);---> yeh ni hoga to iske lie hi hum
+
+        LinkedList<Integer> ll = new LinkedList<>();
+        ll.add(10);
+        System.out.println(ll);
+        ll.addFirst(1);
+        System.out.println(ll);
+        ll.addLast(101);
+        System.out.println(ll);
+
+//          Removing methods
+//        ll.removeFirst();
+//        ll.removeLast();
+//        System.out.println(ll);
+
+
+
 
 
 
