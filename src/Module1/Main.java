@@ -123,16 +123,17 @@ public class Main {
         ll.addLast(101);
         System.out.println(ll);
 
+        //System.out.println(ll.getFirst());
+        //System.out.println(ll.getLast());
+        System.out.println(ll.peek());
+        System.out.println(ll.poll() + "\n" + ll);
+        System.out.println(ll.offer(45));// yeh kya karta hai add element ki trah kaam karta hai element ko store karta hai is linked list mein or fir hum usko print karva sakte hai
+        System.out.println(ll);
+//        System.out.println(ll);
 //          Removing methods
 //        ll.removeFirst();
 //        ll.removeLast();
 //        System.out.println(ll);
 
-
-
-
-
-
-
-    }
+  }
 }
