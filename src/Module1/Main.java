@@ -135,5 +135,10 @@ public class Main {
 //        ll.removeLast();
 //        System.out.println(ll);
 
+//        ---------// CREATION OF VECTOR IN Integer and String format // --------
+//         Vector <Integer> vector = new Vector<>();
+//         Vector <String> V1 = new Vector<>();
+
+
   }
 }
