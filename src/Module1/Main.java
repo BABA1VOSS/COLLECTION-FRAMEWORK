@@ -110,8 +110,9 @@ public class Main {
         //addFirst and addLast
         list.remove(3);
         list.remove(3);
-        list.remove(3);
-        list.remove(3);
+        list.remove(4);
+        list.remove(5);
+        //list.remove(3);
         System.out.println("printing original list: " + list);
        // list.addFirst(101);---> yeh ni hoga to iske lie hi hum
 
