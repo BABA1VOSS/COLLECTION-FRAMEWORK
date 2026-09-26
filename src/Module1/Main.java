@@ -139,6 +139,7 @@ public class Main {
 //        ---------// CREATION OF VECTOR IN Integer and String format // --------
 //         Vector <Integer> vector = new Vector<>();
 //         Vector <String> V1 = new Vector<>();
+        //LIFO ORDERING is followed in Stack
 
 
   }
