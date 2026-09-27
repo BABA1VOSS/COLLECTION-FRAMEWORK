@@ -21,6 +21,7 @@ public class priorityQueue {
         System.out.println(pq.poll());
         System.out.println(pq);
         System.out.println(pq.poll());
+        System.out.println(pq.peek());
 
     }
 }
