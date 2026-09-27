@@ -42,7 +42,7 @@ public class HashSetsBasics {
        //-------TIME COMPLEXITY-----//
         //HasahedSet -> O(1)
         //LinkedHasahaedSet -> O(n)
-        //TreeSEt -> BST
+        //TreeSEt -> BST O(logn)
 
         Set<Integer> st = new TreeSet<>();
         st.add(40);
