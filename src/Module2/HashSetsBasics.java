@@ -7,6 +7,23 @@ import java.util.TreeSet;
 
 public class HashSetsBasics {
     public static void main(String[] args) {
+        HashSet<Student> set = new HashSet<>();
+        //Hume iski  need kyu padi hai, dekhte hai jaise ki Set ki jo functionality hai wo hai ki isme to dublicate value store hi ni hoti,
+
+        Student s1 = new Student(1, "Aryan");
+        Student s2 = new Student(1, "Aryan");
+        Student s3 = new Student(1, "Aryan");
+
+
+        set.add(s1);
+        set.add(s2);
+        set.add(s3);
+        //-----isse duplicate element print ho rha hai usne 3eeno element alag alag store akr lie hai --> jab bhi custom type of data ko implement kar rha hu mein mujhe 2 tarah ke method ko implement karna padega tab ja ke wo ek element treat karega so basically mene ek rule banaya -------1.ki name same ho skta hai , but rollno. unique hona chaiye
+
+        System.out.println(set);// is stage pe mene isko direct RUN kia tha, direct run se usse iska output ni aya desired output ni aya kyunki hume uska toStringmethod rakhna padega to wo hum Student class mein rakh ke ayenge fir code desired output mein run hoga
+
+
+
 
 //        Set<Integer> set1 = new HashSet<>();
 //        Set<Integer> set2 = new HashSet<>();
