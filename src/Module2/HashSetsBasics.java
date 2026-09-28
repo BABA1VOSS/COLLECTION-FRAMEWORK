@@ -44,17 +44,17 @@ public class HashSetsBasics {
         //LinkedHasahaedSet -> O(n)
         //TreeSEt -> BST O(logn)
 
-        Set<Integer> st = new TreeSet<>();
-        st.add(40);
-        st.add(10);
-        st.add(10);
-        st.add(10);
-        st.add(10);
-        st.add(10);
-        st.add(20);
-        st.add(20);
-        st.add(30);
-        System.out.println(st);
+//        Set<Integer> st = new TreeSet<>();
+//        st.add(40);
+//        st.add(10);
+//        st.add(10);
+//        st.add(10);
+//        st.add(10);
+//        st.add(10);
+//        st.add(20);
+//        st.add(20);
+//        st.add(30);
+//        System.out.println(st);
         //set ke under agr hum koi sa abhi order dalde woh usko preesrve ni karta SET hamesah random saved element show karega humko
 
     }
