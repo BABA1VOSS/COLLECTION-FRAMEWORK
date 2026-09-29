@@ -1,7 +1,9 @@
 package Module3;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class HashMapBasics {
 
@@ -59,6 +61,34 @@ public class HashMapBasics {
 
         table.replace("in", "Indonesia");// used to modify the key corresponding values
         System.out.println(table);
+
+
+        // #Keyset() -- returns a collection of all the keys present in a map
+        Set<String> keyset = table.keySet();
+        System.out.println(keyset);
+
+        //#Values() -- returns a values present in a  map
+        Collection<String> valueSet = table.values();
+        System.out.println(valueSet);
+
+
+        // get all the entries from a map -> method contains entrySet()
+         Set<Map.Entry<String,String>> entrySet  = table.entrySet();
+         //set of map of entry of String,String
+        System.out.println("Printing entries: " + entrySet);
+
+
+
+        //Iterator
+        Map<Integer,String> map = new HashMap<>();
+        map.put(1,"one");
+        map.put(2,"Two");
+
+        for (Map.Entry<Integer,String> entry : map.entrySet()) {
+            System.out.println("key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+
+
 
     }
 
