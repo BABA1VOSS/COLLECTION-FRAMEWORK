@@ -59,7 +59,7 @@ public class Student implements Comparable<Student> {
         //sor basis on age
         //return this.age - that.age;
         // jab issi age ko mujhe descending order mein print karna hoga tab mein uper wale process ko ulta kar dunga
-        if(this.age ==that.age){// jab age same aajaye to fir hum ----> check karte hai name order , Order fir alphabetically store ho ke dikha dega
+        if(this.age ==that.age){// jab age same aajaye to fir hum ----> check karte hai name order , Order fir alphabetically store ho ke dikha dega (is sorting ko lexically graphically method bolte hai )
             return this.name.compareTo(that.name);
         }
         return that.age - this.age;
