@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<Student> students = new ArrayList<>();
+        //custom class ke lie humne comparable interface implement hi ni kia to pehle wahi karenge (humne Student m implement kia or tabhi collection.sort chal jayega)..
         students.add(new Student(19, "vipul", 60));
         students.add(new Student(23, "Love", 87));
         students.add(new Student(23, "Ankit", 55));
