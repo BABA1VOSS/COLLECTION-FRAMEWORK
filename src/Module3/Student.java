@@ -63,7 +63,6 @@ public class Student implements Comparable<Student> {
             return this.name.compareTo(that.name);
         }
         return that.age - this.age;
-        return that.age - this.age;
     }
 }
 
