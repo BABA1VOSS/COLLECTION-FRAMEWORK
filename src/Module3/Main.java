@@ -5,8 +5,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //yaha se array wala part
-        int[] arr = {5,1,7,2,8,4};
-        Arrays.sort(arr);
+        Integer[] arr = {5,1,7,2,8,4};
+        Arrays.sort(arr, new ReverseComparaotr());
         for (int a: arr) {
             System.out.print(a + " " );
         }
